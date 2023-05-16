@@ -4,7 +4,7 @@
              x:Class="eus6.Actulizar">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Actualizar y Eliminar usuarios" HorizontalTextAlignment="Center" FontSize="20"/>
+            <Label Text="Actualizar y Eliminar usuarios" HorizontalTextAlignment="Center" FontSize="20" />
             <Entry x:Name="txtCodigo" Placeholder="Ingrese el codigo"/>
             <Entry x:Name="txtNombre" Placeholder="Ingrese el nombre"/>
             <Entry x:Name="txtApellido" Placeholder="Ingrese el apellido"/>
@@ -17,9 +17,9 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button Grid.Row="0" Text="Actulizar" x:Name="btnActualizar" Clicked="btnActualizar_Clicked" Grid.Column="0">
+                <Button Grid.Row="0" Text="Actulizar" x:Name="btnActualizar" Clicked="btnActualizar_Clicked" Grid.Column="0" CornerRadius="15" BackgroundColor="Black" TextColor="White">
                 </Button>
-                <Button Grid.Row="0" Text="Eliminar" x:Name="btnEliminar" Clicked="btnEliminar_Clicked" Grid.Column="1">
+                <Button Grid.Row="0" Text="Eliminar" x:Name="btnEliminar" Clicked="btnEliminar_Clicked" Grid.Column="1" CornerRadius="15" BackgroundColor="Black" TextColor="White">
                 </Button>
             </Grid>
         </StackLayout>

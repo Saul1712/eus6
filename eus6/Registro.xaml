@@ -4,6 +4,7 @@
              x:Class="eus6.Registro" NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <StackLayout>
+           
             <Label Text="Registro usuarios" HorizontalTextAlignment="Center" FontSize="20"/>
 
             <Entry x:Name="txtCodigo" Placeholder="Ingrese el codigo"/>
@@ -18,11 +19,12 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button Grid.Row="0" Text="Insertar" x:Name="btnIngresar" Clicked="btnIngresar_Clicked" Grid.Column="0">
-                </Button>
-                <Button Grid.Row="0" Text="Regresar" x:Name="btnRegresar" Clicked="btnRegresar_Clicked" Grid.Column="1">
+                <Button Grid.Row="0" Text="Insertar" x:Name="btnIngresar" Clicked="btnIngresar_Clicked" Grid.Column="0" CornerRadius="15" BackgroundColor="Black" TextColor="White"/>
+
+                <Button Grid.Row="0" Text="Regresar" x:Name="btnRegresar" Clicked="btnRegresar_Clicked" Grid.Column="1" CornerRadius="15" BackgroundColor="Black" TextColor="White">
                 </Button>
             </Grid>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

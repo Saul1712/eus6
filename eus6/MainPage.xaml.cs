@@ -37,7 +37,8 @@ namespace eus6
 
         private void bntGet_Clicked(object sender, EventArgs e)
         {
-
+            var mensaje = "BIENVENIDO";
+            DependencyService.Get<Mensaje>().longAlert(mensaje);
             Navigation.PushAsync(new Registro());
         }
 

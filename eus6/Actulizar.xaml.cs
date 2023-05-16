@@ -21,12 +21,11 @@ namespace eus6
 		{
 			InitializeComponent ();
             
-       
             txtCodigo.Text = codigo;
             txtNombre.Text = nombre;
             txtApellido.Text = apellido;
             txtEdad.Text = edad;
-            
+            txtCodigo.IsEnabled = false;
         }
        
         private void btnEliminar_Clicked(object sender, EventArgs e)
@@ -48,8 +47,9 @@ namespace eus6
 
         private void btnActualizar_Clicked(object sender, EventArgs e)
         {
+
             try
-            {
+            {               
                 WebClient client = new WebClient();
                 var parametros = new System.Collections.Specialized.NameValueCollection();
                 client.UploadValues("http://192.168.100.37/moviles/post.php?codigo=" + txtCodigo.Text + "&nombre=" + txtNombre.Text + "&apellido=" + txtApellido.Text + "&edad=" + txtEdad.Text, "PUT", parametros);
@@ -61,9 +61,7 @@ namespace eus6
 
                 DisplayAlert("Alerta", ex.Message, "Cerrar");
             }
-        }
-
-        
+        }     
 
     }
 }
